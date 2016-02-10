@@ -1,0 +1,262 @@
+/* For all devices */
+body {
+	background-color: #E8E8E8;
+	text-align: center;
+	font-family: "Times New Roman", Times, serif;
+}
+
+body, #openinghours p, ul, #cookiebanner p, footer p {
+	padding: 0;
+	margin: 0;
+}
+
+h1 {
+	color: #FFCCCC;
+	font-size: 24px;
+}
+
+h2 {
+	font-size: 20px;
+}
+
+p {
+	font-size: 16px;
+}
+
+#cookiebanner p {	
+	margin: 5px;
+}
+
+nav, li a, #cookiebanner,#sitemap {
+	background-color: #D8D8D8;
+}
+
+section, button, #submit {
+	background-color: white;
+}
+
+footer, button:hover, li a:hover, #submit:hover {
+	background-color: #FFCCCC;
+}
+
+#header, button:active, li a:active, #submit:active {
+	background-color: #99FFFF;
+}
+
+#header {
+	overflow: auto;
+}
+
+#logo {
+	max-height: 122px;
+}
+
+h2, input, textarea, footer p, .socialmedia, li a {
+	padding: 5px;
+}
+
+a {
+	font-weight: bold;
+}
+
+a, p, h2, table {
+	color: gray;
+}
+
+p a:hover, button, input, textarea, .categoryarea a:hover p {
+	color: #B8B8B8;
+}
+
+section a:hover {
+	color: #ccffff;
+}
+
+.socialmedia {
+	min-height: 16px;
+	max-width: 20px;
+}
+
+li a:link, li a:visited {
+  	text-transform: uppercase;
+ 	color: white;
+}
+
+#current {
+	background-color: #D0D0D0;
+}
+
+header, nav, section, footer {
+	float: left;
+}
+
+.slideshow, .categoryarea, .category, .productarea, .product, #cookiebanner, #openinghours, #logo, header, nav, section, footer, iframe, #sitemap {
+	width: 100%;
+}
+
+#cookiebanner {
+	position: fixed;
+	bottom: 0;
+}
+
+form, textarea, input  {
+	width: 90%;
+	max-width: 439px;
+}
+
+label {
+	margin-top: 20px;
+}
+
+button, input, textarea {
+	border-radius: 3px;
+	border-style: solid;
+}
+
+textarea {
+	height: 213px;
+}
+
+textarea, input {
+	background-color: #E8E8E8;
+}
+
+#submit {
+	width: auto;
+	margin-bottom: 5px;
+}
+
+table, form, textarea, input {
+	margin: auto;
+}
+
+span {
+	color: red;
+}	
+
+a {
+	text-decoration: none;
+}
+
+section a {
+	color: #99FFFF;
+}
+
+iframe {
+	border: none;
+}
+
+#sitemap p {
+	padding: 0;
+	margin: 0;
+}
+
+#slideshow {
+	position: relative;
+}
+
+.slideshownav {
+	position: absolute;
+	top: 50%;
+	height: 5%;
+}
+
+#previous, #cookiebanner {
+	left: 0;
+}
+
+#next {
+	right: 0;
+}
+
+#slideshow:hover .slideshownav {
+	display: inline;
+}
+
+/*For mobile phones & some are for tablets*/
+#menu-icon {
+	padding-top: 4px;
+}
+
+ul, .slideshownav {
+	display: none;
+}
+
+nav:hover ul, li a, label {
+	display: block;
+}
+
+/*For tablets & some are for desktops*/
+@media only screen and (min-width: 481px) {
+    header {
+    	width: 65%;
+    	height: 126px;
+		line-height: 126px;
+    }
+
+    #logo {
+    	vertical-align: middle;
+    }
+
+    #openinghours {
+    	width: 35%;
+    	float: right;
+    }
+
+	.socialmedia {
+		max-width: 30px;
+	}
+
+	.categoryarea, .product {
+		width: 49%;
+	}
+
+	.productarea, .categoryarea {
+		display: inline-block;
+	}
+
+	.productarea {
+		margin-bottom: 16px;
+	}
+	
+	.product {
+		float: left;
+	}
+
+	iframe {
+ 		min-height: 300px;
+	}
+}
+
+/*For desktops*/
+@media only screen and (min-width: 769px) {
+	body {
+		margin: auto;
+		max-width: 1200px;
+	}
+	
+	ul { 
+		display: block;
+	}
+
+	li {
+		display: inline-block;
+		float: left;
+		width: 25%;
+	}
+
+	#menu-icon {
+		display: none;
+	}
+	
+	.categoryarea {
+		width: 24%;
+	}
+
+	.productarea {
+		width: 49%;
+	}
+
+	iframe {
+ 		min-height: 500px;
+	}
+}
