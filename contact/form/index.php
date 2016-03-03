@@ -13,9 +13,6 @@
 	</head>
 	
 	<body>
-		<div id="sitemap">
-			<p><a href="../../sitemap.xml">Site Map</a></p>
-		</div>
 		<div id="header">
 			<header>
 				<img id="logo" src="../../images/logo.png" alt="Bubbles Bargain World Logo">
@@ -76,23 +73,26 @@
 			</div>
 			
 			<form name="contactform" method="post" onsubmit="return validate(this);"> <!--validate using JavaScript when submitted-->
+			    <p class="required">* indicates a required field</p>
 			    <label for="email">Email <span class="required">*</span></label>
-			    <input type="email" name="email" placeholder="Enter your email here." required tabindex="1" onchange="emailvalidate(this);">
+			    <input type="email" name="email" placeholder="Enter your email here." required tabindex="1" onchange="emailvalidate(this);" id="email">
 
 			    <label for="subject">Subject</label>
-			    <input type="text" name="subject" placeholder="Enter the subject here." tabindex="2" >
+			    <input type="text" name="subject" placeholder="Enter the subject here." tabindex="2" id="subject">
 
 			    <label for="message">Message <span class="required">*</span></label>
-			    <textarea name="message" placeholder="Enter your message here." required tabindex="3" onchange="messagevalidate(this);"></textarea>
+			    <textarea name="message" placeholder="Enter your message here." required tabindex="3" onchange="messagevalidate(this);" id="message"></textarea>
 
 			    <input id="submit" name="submit" type="submit" value="Submit">
-			    <p class="required">* indicates a required field</p>
+			    
 			</form>
 		</section>
 
 		<footer>
 			<a href="https://www.facebook.com/Bubbles-Bargain-World-1553944361587066/timeline" target="_blank"><img class="socialmedia" src="../../images/facebook.png" alt="Find Us On Facebook at bubblesbargainworld"></a>
+			<a href="https://twitter.com/BubblesBognor" target="_blank"><img class="socialmedia" src="../../images/twitter.png" alt="Find Us On Twitter @BubblesBognor"></a>
 			<p>Validated using <a href="http://validator.w3.org/check?uri=referer" target="_blank">HTML</a> and <a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank">CSS</a>.</p>
+			<p><a href="../../sitemap.xml">Site Map</a></p>
 			<p>&copy; BubblesBargainWorld 2015 All Rights Reserved.</p>
 			<p>Designed &amp; Developed by Jahidul Pabel Islam.</p>
 		</footer>
