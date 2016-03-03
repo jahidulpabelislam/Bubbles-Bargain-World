@@ -12,3 +12,4 @@ ErrorDocument 500 /error/500/
 
 RewriteEngine On
 RewriteCond %{HTTP_HOST} ^bubblesbargainworld.co.uk [nc]
+RewriteRule (.*) http://www.bubblesbargainworld.co.uk/$1 [R=301,L]
