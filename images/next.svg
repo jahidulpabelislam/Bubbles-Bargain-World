@@ -18,7 +18,7 @@
    viewBox="0 0 25 25"
    enable-background="new 0 0 40 40"
    xml:space="preserve"
-   inkscape:version="0.48.4 r9939"
+   inkscape:version="0.91 r13725"
    sodipodi:docname="next.svg"><metadata
      id="metadata21"><rdf:RDF><cc:Work
          rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
@@ -45,12 +45,12 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1920"
-     inkscape:window-height="1018"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
      id="namedview17"
      showgrid="false"
      inkscape:zoom="16.68772"
-     inkscape:cx="-15.334856"
+     inkscape:cx="-6.3859988"
      inkscape:cy="12.927239"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
@@ -59,4 +59,4 @@
      id="path13"
      d="M 8.3796995,1.0552849 5.3996057,4.0353715 13.839524,12.475282 5.4805471,20.834259 8.4827138,23.836426 19.821784,12.497355 8.3796995,1.0552849 Z"
      inkscape:connector-curvature="0"
-     style="fill:#00eded;stroke:#00eded;stroke-width:1.262;stroke-linecap:round;stroke-linejoin:round;fill-opacity:1;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" /></svg>
+     style="fill:#00c2c2;stroke:#00c2c2;stroke-width:1.262;stroke-linecap:round;stroke-linejoin:round;fill-opacity:1;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" /></svg>
