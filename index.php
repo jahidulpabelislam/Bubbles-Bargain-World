@@ -1,26 +1,31 @@
 <?php
+//title of page to use
 $title = "Home";
+//the description to use for page
 $description = "Come and view our Website for our shop Bubbles Bargain World and the big range of products we have. We have Savings you'll love.";
+//the keywords to use for pages
 $keywords = "shop, savings, discount, bubbles, bargain, world, west, sussex, bognor, regis, local, cards, toys, sweets, character, merchandise, party, arts, craft, novelty, gifts, stationary, glassware, baby, plaque, sign, souvenirs";
+//include the header for page
 include "inc/header.php";
 ?>
-    <!-- Script to make slideshow work -->
-    <script type="text/javascript" src="/lib/slideshow.js"></script>
+    <!-- Start Dynamic content for page -->
+    <!-- Container for slideShow -->
+    <div id="slideShow">
 
-    <!-- Container for slideshow -->
-    <div id="slideshow">
+        <!-- the slideShow navigation images -->
+        <img class="slideShowNav" id="previous" src="images/previous.svg" alt="Click to View Previous Image">
+        <img class="slideShowNav" id="next" src="images/next.svg" alt="Click to View Next Image">
 
-        <!-- the slideshow navaigation images -->
-        <img class="slideshownav" id="previous" src="images/previous.svg" alt="Previous Image">
-        <img class="slideshownav" id="next" src="images/next.svg" alt="Next Image">
-
-        <!-- the images for slidehow -->
-        <img class="slideshow" id="1" src="images/store.jpg" alt="A image of a product" style="display:block;">
-        <img class="slideshow" id="2" src="images/display1.jpg" alt="A image of a product" style="display:none;">
-        <img class="slideshow" id="3" src="images/display2.jpg" alt="A image of a product" style="display:none;">
-        <img class="slideshow" id="4" src="images/card1.jpg" alt="A image of a product" style="display:none;">
-        <img class="slideshow" id="5" src="images/party1.jpg" alt="A image of a product" style="display:none;">
+        <!-- the images for slide show -->
+        <img class="slideShow" id="1" src="images/store.jpg" alt="A image of a product" style="display:block;">
+        <img class="slideShow" id="2" src="images/display1.jpg" alt="A image of a product" style="display:none;">
+        <img class="slideShow" id="3" src="images/display2.jpg" alt="A image of a product" style="display:none;">
+        <img class="slideShow" id="4" src="images/card1.jpg" alt="A image of a product" style="display:none;">
+        <img class="slideShow" id="5" src="images/party1.jpg" alt="A image of a product" style="display:none;">
     </div>
+
+    <!-- Script to make slideShow work -->
+    <script type="text/javascript" src="/lib/slideShow.js"></script>
 
     <p>Welcome to Bubblesbargainworld.co.uk, one of the England's South Coast's leading retailer with a relentless drive
         to exceed expectations. We dedicate to provide you the best shopping experience at great discount prices.</p>
@@ -59,6 +64,8 @@ include "inc/header.php";
                 fjs.parentNode.insertBefore(js, fjs);
             }
         }(document, "script", "twitter-wjs");</script>
+    <!-- End dynamic content -->
 <?php
+//include the footer for page
 include "inc/footer.html";
 ?>

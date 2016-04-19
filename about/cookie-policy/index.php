@@ -1,10 +1,14 @@
 <?php
+//title of page to use
 $title = "Cookie Policy";
+//the description to use for page
 $description = "Cookie Policy for the website for our shop Bubbles Bargain World.";
+//the keywords to use for pages
 $keywords = "shop, savings, discount, bubbles, bargain, world, west, sussex, bognor, regis, local, cards, toys, sweets, character, merchandise, party, arts, craft, novelty, gifts, stationary, glassware, baby, plaque, sign, souvenirs";
+//include the header for page
 include '../../inc/header.php';
 ?>
-
+    <!-- Start Dynamic content for page -->
     <!-- text explaining cookies -->
     <p>Our website uses cookies to collect information. We’ll assume you're OK with this as by viewing our website you
         agree to use cookies.</p>
@@ -30,13 +34,15 @@ include '../../inc/header.php';
             <td>Used to throttle request rate.</td>
         </tr>
         <tr>
-            <td>cookiesbanner</td>
+            <td>cookiesBanner</td>
             <td>30 days</td>
             <td>Used to store that you've clicked ok on the cookie banner.</td>
         </tr>
 
     </table>
-    <p>To stop cookies you will need to go to your brower settings.</p>
+    <p>To stop cookies you will need to go to your browser settings.</p>
+    <!-- End dynamic content -->
 <?php
+//include the footer for page
 include '../../inc/footer.html';
 ?>

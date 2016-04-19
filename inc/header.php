@@ -4,16 +4,19 @@
 <head>
     <meta charset="utf-8">
     <meta name="author" content="Jahidul Pabel Islam">
+    <!-- Dynamically insert the description for a page -->
     <meta name="description"
           content="<?php echo $description ?>">
+    <!-- Dynamically insert the keywords for a page -->
     <meta name="keywords"
           content="<?php echo $keywords ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Dynamically insert the title for a page -->
     <title><?php echo $title ?> - Bubbles Bargain World</title>
     <!-- the favicon for browsers -->
     <link rel="icon" href="/images/favicon.png">
     <!-- the style sheet for the site -->
-    <link rel="stylesheet" type="text/css" href="/lib/style2.css"/>
+    <link rel="stylesheet" type="text/css" href="/lib/style.css"/>
 </head>
 
 <body>
@@ -21,10 +24,10 @@
 <header>
 
     <!-- Logo -->
-    <img id="logo" src="/images/logo.png" alt="Bubbles Bargain World Logo">
+    <a href="/"><img id="logo" src="/images/logo.png" alt="Bubbles Bargain World Logo"></a>
 
     <!-- Div containing opening hours -->
-    <div id="openinghours">
+    <div id="openingHours">
 
         <!-- The opening hour for each day -->
         <p id="monday">Monday: 9am - 5:30pm</p>
@@ -41,19 +44,21 @@
 <nav>
 
     <!-- Menu Icon/Only used for smaller screens -->
-    <img id="menu-icon" src="/images/menu-icon.svg" alt="Menu">
+    <img id="menuIcon" src="/images/menuIcon.svg" alt="Menu">
 
     <!-- The different links -->
     <ul>
-        <li><a id="current" href="/">Home</a></li>
-        <li><a href="/products">Products</a></li>
-        <li><a href="/contact">Contact Us</a></li>
-        <li><a href="/about">About Us</a></li>
+        <!-- Check if page is any of the ones in nav menu -->
+        <li><a <?php if ($title == "Home") echo "id='current'"; ?> href="/">Home</a></li>
+        <li><a <?php if ($title == "Products") echo "id='current'"; ?> href="/products">Products</a></li>
+        <li><a <?php if ($title == "Contact") echo "id='current'"; ?> href="/contact">Contact</a></li>
+        <li><a <?php if ($title == "About") echo "id='current'"; ?> href="/about">About</a></li>
     </ul>
 </nav>
 
 <!-- The main content -->
 <section>
 
-    <!-- Heading for page -->
+    <!-- Dynamically insert the heading for a page -->
+    <!-- Heading for a page -->
     <h1><?php echo $title ?></h1>

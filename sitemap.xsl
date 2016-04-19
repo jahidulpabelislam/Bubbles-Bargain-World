@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
                 xmlns:sitemap="http://www.sitemaps.org/schemas/sitemap/0.9"
-                version="1.0"
->
-
+                version="1.0">
     <xsl:template match="/">
         <html>
             <head>
-                <title>Sitemap - Bubbles Bargain World</title>
-                <!-- the favicon for browsers 
-                <link rel="icon" href="images/favicon.png">-->
+                <!--The Title Page-->
+                <title>Site Map - Bubbles Bargain World</title>
+
+                <!--CSS, Styling the page using CSS-->
                 <style type="text/css">
                     body {
                     font-family: "Lucida Grande","Lucida Sans Unicode",Tahoma,Verdana;
@@ -30,18 +29,26 @@
                 </style>
             </head>
             <body>
+                <!--Heading for page-->
                 <h1>Site Map</h1>
+                <!--A Table to hold the links-->
                 <table border="1">
+                    <!--Table column name-->
                     <tr bgcolor="#ffa9a9">
                         <th>URL</th>
                     </tr>
+                    <!--Loop through each page in set-->
                     <xsl:for-each select="sitemap:urlset/sitemap:url">
+                        <!--Create a row-->
                         <tr>
                             <td>
+                                <!--Create a 'a' tag-->
                                 <a>
                                     <xsl:attribute name="href">
+                                        <!--Make href of a tag the link of page-->
                                         <xsl:value-of select="sitemap:loc"/>
                                     </xsl:attribute>
+                                    <!--Make link text the link of page-->
                                     <xsl:value-of select="sitemap:loc"/>
                                 </a>
                             </td>
