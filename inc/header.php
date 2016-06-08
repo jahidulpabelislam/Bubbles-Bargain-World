@@ -5,11 +5,9 @@
     <meta charset="utf-8">
     <meta name="author" content="Jahidul Pabel Islam">
     <!-- Dynamically insert the description for a page -->
-    <meta name="description"
-          content="<?php echo $description ?>">
+    <meta name="description" content="<?php echo $description ?>">
     <!-- Dynamically insert the keywords for a page -->
-    <meta name="keywords"
-          content="<?php echo $keywords ?>">
+    <meta name="keywords" content="<?php echo $keywords ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Dynamically insert the title for a page -->
     <title><?php echo $title ?> - Bubbles Bargain World</title>

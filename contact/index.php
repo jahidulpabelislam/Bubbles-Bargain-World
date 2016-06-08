@@ -47,7 +47,7 @@ include '../inc/header.php';
                         //try to send email
                         if (mail($to, $subject, $message, $headers)) {
                             //if sent give message letting user know
-                            echo 'Your message has been sent!';
+                            echo '<span class="correct">Your message has been sent!</span>';
                         } else {
                             //if not sent give message
                             echo '<span class="error">Something went wrong, please try again!</span>';

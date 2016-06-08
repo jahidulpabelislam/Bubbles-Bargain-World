@@ -102,6 +102,10 @@ input {
     color: red;
 }
 
+.correct {
+    color: green;
+}
+
 a {
     font-weight: bold;
     color: #555555;
